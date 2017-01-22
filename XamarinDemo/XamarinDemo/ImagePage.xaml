@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDemo.ImagePage">
+
+  <ListView x:Name="lstImages" VerticalOptions="Center" HasUnevenRows="True" HorizontalOptions="Center">
+    <ListView.ItemTemplate RowHeight="50">
+      <DataTemplate>
+        <ViewCell >
+          <RelativeLayout >
+            <Image VerticalOptions="Center" HorizontalOptions="Center"  Source="{Binding Url}"></Image>
+          </RelativeLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
